@@ -4,7 +4,7 @@
 
     <groupId>com.github.kklisura.cdt</groupId>
     <artifactId>ctd-java-client-root</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <version>4.0.0.0.cosium-SNAPSHOT</version>
     <packaging>pom</packaging>
 
     <name>ctd-java-client-root</name>
@@ -43,8 +43,46 @@
     </properties>
 
     <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-javadoc-plugin</artifactId>
+                <version>3.0.0</version>
+                <executions>
+                    <execution>
+                        <id>attach-javadocs</id>
+                        <goals>
+                            <goal>jar</goal>
+                        </goals>
+                        <configuration>
+                            <failOnError>false</failOnError>
+                            <doclint>none</doclint>
+                            <skip>true</skip>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
         <pluginManagement>
             <plugins>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-javadoc-plugin</artifactId>
+                    <version>3.0.0</version>
+                    <executions>
+                        <execution>
+                            <id>attach-javadocs</id>
+                            <goals>
+                                <goal>jar</goal>
+                            </goals>
+                            <configuration>
+                                <failOnError>false</failOnError>
+                                <doclint>none</doclint>
+                                <skip>true</skip>
+                            </configuration>
+                        </execution>
+                    </executions>
+                </plugin>
                 <plugin>
                     <!-- This plugin is also present in cdt-java-client, so be sure to copy any changes here to that module as well -->
                     <groupId>org.codehaus.mojo</groupId>
@@ -108,4 +146,8 @@
             </plugins>
         </pluginManagement>
     </build>
+
+    <scm>
+        <connection>scm:git:https://github.com/Cosium/chrome-devtools-java-client</connection>
+    </scm>
 </project>

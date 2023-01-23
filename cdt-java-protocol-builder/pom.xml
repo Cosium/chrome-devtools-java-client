@@ -5,11 +5,11 @@
     <parent>
         <groupId>com.github.kklisura.cdt</groupId>
         <artifactId>ctd-java-client-root</artifactId>
-        <version>1.0-SNAPSHOT</version>
+        <version>4.0.0.0.cosium-SNAPSHOT</version>
     </parent>
 
     <artifactId>cdt-java-protocol-builder</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <version>4.0.0.0.cosium-SNAPSHOT</version>
     <packaging>jar</packaging>
 
     <name>cdt-java-protocol-builder</name>
@@ -40,7 +40,7 @@
         <dependency>
             <groupId>com.github.kklisura.cdt</groupId>
             <artifactId>cdt-protocol-parser</artifactId>
-            <version>1.0-SNAPSHOT</version>
+            <version>4.0.0.0.cosium-SNAPSHOT</version>
         </dependency>
 
         <dependency>
